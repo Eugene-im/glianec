@@ -144,21 +144,54 @@ main #tabs ul li {
 }
 main .menu_tabs-1_item {
   display: inline-block;
+  text-align: center;
+  width: 24%;
 }
 main .menu_tabs-1_item_circle1_circle2 {
-  width: 95px;
-  height: 95px;
+  display: inline-block;
+  width: 92px;
+  height: 92px;
   border: 3px solid #ffffff;
   border-radius: 50%;
   text-align: center;
   background-color: #ed1d24;
 }
 main .menu_tabs-1_item_circle1 {
+  display: inline-block;
   width: 103px;
   height: 103px;
   border-radius: 50%;
   text-align: center;
   background-color: black;
+}
+main .menu_tabs-1_item_text {
+  width: 100%;
+}
+main .menu_tabs-1_attention {
+  width: 878px;
+  height: 104px;
+  background-color: #fff0f1;
+  float: right;
+}
+main .menu_tabs-1_attention_right {
+  display: inline-block;
+  width: 696px;
+  height: 54px;
+  color: #000000;
+  vertical-align: middle;
+}
+main .menu_tabs-1_attention_left {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ed1d24;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+main .advantages_card_back {
+  position: relative;
+  float: right;
+  background: url(../img/main_back_2.png) center center no-repeat;
 }
 
 .clear:after,

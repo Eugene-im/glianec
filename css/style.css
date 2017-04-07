@@ -1,3 +1,35 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain) */
@@ -86,66 +118,179 @@ header .logo, header .block1, header .block2, header .block3, header .block4, he
   vertical-align: top;
 }
 header .logo, footer .logo {
-  max-width: 237px;
+  max-width: 19.88255%;
   width: 100%;
   margin-top: 10px;
+  margin-right: 2%;
+  height: auto;
+}
+header .logo img, footer .logo img {
+  width: 100%;
   height: auto;
 }
 header .block1, footer .block1 {
-  max-width: 140px;
+  max-width: 11.74497%;
   width: 100%;
   margin-top: 39px;
+  margin-left: 2%;
   height: auto;
+  font-family: "RobotoBold";
+}
+header .block1 .block1_tagline, footer .block1 .block1_tagline {
+  font-size: 14px;
+}
+header .block1 .block1_map_link a, footer .block1 .block1_map_link a {
+  color: #ed1d24;
+  font-family: "RobotoRegular";
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: underline;
 }
 header .block2, footer .block2 {
-  width: 466px;
+  width: 39.09396%;
   margin-top: 32px;
+  margin-left: 2%;
 }
 header .block2 ul, footer .block2 ul {
-  width: 32%;
+  width: auto;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+header .block2 ul li a, footer .block2 ul li a {
+  color: #000000;
+  font-family: "RobotoRegular";
+  line-height: 30px;
+  font-size: 14px;
 }
 header .block3, footer .block3 {
+  width: 22%;
   margin-top: 32px;
   text-align: right;
+  font-family: "RobotoRegular";
+  color: #000000;
+}
+header .block3 .block3_location, footer .block3 .block3_location {
+  font-size: 14px;
+}
+header .block3 .block3_phone, footer .block3 .block3_phone {
+  font-size: 24px;
+  font-family: "RobotoBold";
+}
+header .block3 .block3_phone a, footer .block3 .block3_phone a {
+  color: #000000;
+}
+header .block3 .block3_mail, footer .block3 .block3_mail {
+  color: #337ab7;
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 main .board {
+  position: relative;
+  width: 100%;
+  height: 567px;
   background: url(../img/main_back.png) center center no-repeat;
 }
+main .board .content {
+  height: 567px;
+}
 main .board .board_img {
-  position: relative;
-  display: inline-block;
+  width: auto;
+  position: absolute;
+  bottom: 0;
 }
 main .board .board_caption {
   display: inline-block;
+  width: 24.83221%;
   float: right;
   text-align: right;
-  max-width: 296px;
-  width: 100%;
   position: relative;
-  top: 0;
+  top: 30px;
+  font-family: "RobotoRegular";
   right: 0;
+}
+main .board .board_caption .board_caption_title {
+  color: #000000;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+main .board .board_caption .board_caption_text {
+  color: #000000;
+  font-size: 15px;
+}
+main .advantages {
+  background-color: #e5e3e3;
 }
 main .advantages_description {
   width: 100%;
   text-align: center;
+  font-family: "RobotoLight";
   vertical-align: top;
+  color: #2c3134;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: -90px;
+}
+main .advantages_description .advantages_description_lable {
+  display: inline-block;
+  position: absolute;
+  margin-top: -136px;
+  margin-left: 20px;
 }
 main .advantages_line_item {
   display: inline-block;
   text-align: center;
   width: 24%;
+  vertical-align: top;
+}
+main .advantages_line_item .advantages_line_item_text {
+  color: #2c3134;
+  font-family: "RobotoBold";
+  font-size: 15px;
 }
 main .menu_tabs {
   width: 100%;
+  background-color: #ffffff;
 }
-main #tabs ul li {
-  display: inline-block;
+main #tabs {
+  background-color: #e5e3e3;
+}
+main ul
+li {
+  width: 33%;
+  float: left;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 4px solid transparent;
+  margin: 0;
+}
+main ul
+li a {
+  padding: 0 20%;
+  color: #2c3134;
+  font-family: "RobotoBold";
+  font-size: 14px;
+  text-transform: uppercase;
+}
+main .ui-tabs-active {
+  background-color: #ffffff;
+  border-color: #ed1d24;
 }
 main .menu_tabs-1_item {
   display: inline-block;
   text-align: center;
   width: 24%;
+  margin: 4.02685% 0 4.69799%;
+}
+main .menu_tabs-1_item_circle1 {
+  display: inline-block;
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: black;
 }
 main .menu_tabs-1_item_circle1_circle2 {
   display: inline-block;
@@ -156,13 +301,21 @@ main .menu_tabs-1_item_circle1_circle2 {
   text-align: center;
   background-color: #ed1d24;
 }
-main .menu_tabs-1_item_circle1 {
-  display: inline-block;
-  width: 103px;
-  height: 103px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: black;
+main .menu_tabs-1_item_circle1_circle2 .menu_tabs-1_item_circle1_circle2_include {
+  padding: 6% 0;
+  color: #ffffff;
+  font-family: "RobotoRegular";
+  font-size: 14px;
+  line-height: 30px;
+}
+main .menu_tabs-1_item_circle1_circle2 .menu_tabs-1_item_circle1_circle2_include span {
+  color: #ffffff;
+  font-family: "RobotoLight";
+  font-size: 36px;
+  text-transform: uppercase;
+}
+main .menu_tabs-1_item_circle1_circle2 .menu_tabs-1_item_circle1_circle2_include img {
+  padding: 20% 27%;
 }
 main .menu_tabs-1_item_text {
   width: 100%;
@@ -189,9 +342,59 @@ main .menu_tabs-1_attention_left {
   border-radius: 50%;
 }
 main .advantages_card_back {
-  position: relative;
-  float: right;
+  width: 100%;
   background: url(../img/main_back_2.png) center center no-repeat;
+  height: 452px;
+}
+main .advantages_card {
+  max-width: 656px;
+  width: 100%;
+  float: right;
+}
+main .advantages_card_items_item {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+}
+main .advantages_card_items_item .advantages_card_items_circle {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border: 2px solid #ff0000;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ffffff;
+}
+main .news_title {
+  float: left;
+  width: 25%;
+}
+main .news_title .news_title_text, main .news_title .news_title_link {
+  width: 100%;
+  text-align: center;
+}
+main .news_items {
+  width: 75%;
+  float: right;
+}
+main .news_title, main .news_items, main .news_items_item {
+  vertical-align: top;
+}
+main .news_items_item {
+  display: inline-block;
+  width: 30%;
+  float: right;
+  margin-right: 3%;
+}
+main .news_items_item .news_items_item_img {
+  width: 100%;
+}
+main .news_items_item .news_items_item_img img {
+  width: 100%;
+  height: 100%;
+}
+main .news_items_item:first-child {
+  margin-right: 0%;
 }
 
 .clear:after,

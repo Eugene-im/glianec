@@ -455,12 +455,29 @@ main{
 			}
 		}
 	}
+	.news{
+		background-color: #ffffff;
+		padding-top:30px;
+	}
 	.news_title{
 		float:left;
 		width:25%;
 		.news_title_text,.news_title_link{
 			width:100%;
 			text-align:center;
+		}
+		.news_title_text{
+			color: #2c3134;
+			font-family: "RobotoRegular";
+			font-size: 36px;
+			text-transform: uppercase;
+		}
+		.news_title_link a{
+			color: #ff0000;
+			font-family: "RobotoRegular";
+			font-size: 14px;
+			line-height: 20px;
+			text-decoration: underline;
 		}
 	}
 	.news_items{

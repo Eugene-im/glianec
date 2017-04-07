@@ -423,6 +423,10 @@ main .advantages_card_items_item .advantages_card_items_circle {
 main .advantages_card_items_item .advantages_card_items_circle img {
   padding: 16px 0;
 }
+main .news {
+  background-color: #ffffff;
+  padding-top: 30px;
+}
 main .news_title {
   float: left;
   width: 25%;
@@ -430,6 +434,19 @@ main .news_title {
 main .news_title .news_title_text, main .news_title .news_title_link {
   width: 100%;
   text-align: center;
+}
+main .news_title .news_title_text {
+  color: #2c3134;
+  font-family: "RobotoRegular";
+  font-size: 36px;
+  text-transform: uppercase;
+}
+main .news_title .news_title_link a {
+  color: #ff0000;
+  font-family: "RobotoRegular";
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline;
 }
 main .news_items {
   width: 75%;

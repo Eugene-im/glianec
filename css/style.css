@@ -257,17 +257,18 @@ main .menu_tabs {
 main #tabs {
   background-color: #e5e3e3;
 }
-main ul
-li {
+main ul {
+  background-color: #e5e3e3;
+}
+main li {
   width: 33%;
   float: left;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.1);
   border-top: 4px solid transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   margin: 0;
 }
-main ul
-li a {
+main li a {
   padding: 0 20%;
   color: #2c3134;
   font-family: "RobotoBold";
@@ -286,6 +287,7 @@ main .menu_tabs-1_item {
   text-align: center;
   width: 24%;
   margin: 4.02685% 0 4.69799%;
+  background-color: #ffffff;
 }
 main .menu_tabs-1_item_circle1 {
   display: inline-block;
@@ -323,7 +325,11 @@ main .menu_tabs-1_item_circle1_circle2 .menu_tabs-1_item_circle1_circle2_include
 main .menu_tabs-1_item_text {
   width: 100%;
 }
-main .menu_tabs-1_attention {
+main .menu_tabs-1_attention_line {
+  width: 100%;
+  background-color: #fff;
+}
+main .menu_tabs-1_attention_line .menu_tabs-1_attention {
   position: relative;
   width: 878px;
   height: 104px;
@@ -331,7 +337,7 @@ main .menu_tabs-1_attention {
   float: right;
   margin-bottom: 8px;
 }
-main .menu_tabs-1_attention_triangle {
+main .menu_tabs-1_attention_line .menu_tabs-1_attention_triangle {
   position: absolute;
   top: -17px;
   left: 30px;
@@ -341,10 +347,10 @@ main .menu_tabs-1_attention_triangle {
   border-width: 0 0 34px 34px;
   border-color: transparent transparent #fff0f1 transparent;
 }
-main .menu_tabs-1_attention_block {
+main .menu_tabs-1_attention_line .menu_tabs-1_attention_block {
   padding: 24px 31px;
 }
-main .menu_tabs-1_attention_block .menu_tabs-1_attention_right {
+main .menu_tabs-1_attention_line .menu_tabs-1_attention_block .menu_tabs-1_attention_right {
   padding: 0 30px;
   display: inline-block;
   width: 696px;
@@ -356,7 +362,7 @@ main .menu_tabs-1_attention_block .menu_tabs-1_attention_right {
   font-size: 14px;
   line-height: 20px;
 }
-main .menu_tabs-1_attention_block .menu_tabs-1_attention_left {
+main .menu_tabs-1_attention_line .menu_tabs-1_attention_block .menu_tabs-1_attention_left {
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -364,7 +370,7 @@ main .menu_tabs-1_attention_block .menu_tabs-1_attention_left {
   vertical-align: middle;
   border-radius: 50%;
 }
-main .menu_tabs-1_attention_block .menu_tabs-1_attention_left span {
+main .menu_tabs-1_attention_line .menu_tabs-1_attention_block .menu_tabs-1_attention_left span {
   font-size: 36px;
   font-family: "RobotoBold";
   font-weight: 200;
@@ -374,17 +380,36 @@ main .menu_tabs-1_attention_block .menu_tabs-1_attention_left span {
 main .advantages_card_back {
   width: 100%;
   background: url(../img/main_back_2.png) center center no-repeat;
+  background-color: #ffffff;
   height: 452px;
 }
 main .advantages_card {
-  max-width: 656px;
-  width: 100%;
+  width: 57.92737%;
   float: right;
+}
+main .advantages_card .advantages_card_title, main .advantages_card .advantages_card_text {
+  width: 100%;
+  text-align: center;
+}
+main .advantages_card .advantages_card_title {
+  padding-top: 103px;
+  color: #2c3134;
+  font-family: RobotoBold;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+main .advantages_card .advantages_card_text {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  color: #2c3134;
+  font-family: RobotoRegular;
+  font-size: 14px;
 }
 main .advantages_card_items_item {
   display: inline-block;
   width: 32%;
   text-align: center;
+  vertical-align: top;
 }
 main .advantages_card_items_item .advantages_card_items_circle {
   display: inline-block;
@@ -394,6 +419,9 @@ main .advantages_card_items_item .advantages_card_items_circle {
   border-radius: 50%;
   text-align: center;
   background-color: #ffffff;
+}
+main .advantages_card_items_item .advantages_card_items_circle img {
+  padding: 16px 0;
 }
 main .news_title {
   float: left;

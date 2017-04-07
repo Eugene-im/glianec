@@ -156,7 +156,6 @@ header, footer{
 			color: #ed1d24;
 			font-family: "RobotoRegular";
 			font-size: 14px;
-			// font-weight: 400;
 			line-height: 24px;
 			text-decoration: underline;
 		}
@@ -211,7 +210,6 @@ main{
 			height:567px;
 		}
 		.board_img{
-			// display:$inl;
 			width:auto;
 			position:absolute;
 			bottom:0;
@@ -221,8 +219,6 @@ main{
 			width:$g;
 			float:right;
 			text-align: right;
-			// max-width:296px;
-			// width:100%;
 			position: relative;
 			top:30px;
 			font-family: "RobotoRegular";
@@ -266,6 +262,7 @@ main{
 		width:24%;
 		vertical-align:top;
 		.advantages_line_item_text{
+			margin-bottom:69px;
 			color: #2c3134;
 			font-family: "RobotoBold";
 			font-size: 15px;
@@ -279,21 +276,28 @@ main{
 		background-color: #e5e3e3;
 	}
 		ul{
-		background-color: #e5e3e3;
-			} li{
-			width:33%;
-			float:left;
-			text-align:center;
-			border-top: 4px solid transparent;
-			background-color: rgba(0,0,0,.2);
-			margin:0;
+			position:relative;
+			margin-top:-60px;
+			background-color: #e5e3e3;
+			} 
+			li{
+				width:33.3333%;
+				float:left;
+				text-align:center;
+				border-top: 4px solid transparent;
+				background-color: rgba(0,0,0,.2);
+				padding:18px 0 14px;
 				a{
-					padding:0 20%;
+					padding:18px 20%;
 					color: #2c3134;
 					font-family: "RobotoBold";
 					font-size: 14px;
 					text-transform: uppercase;
 				}
+	}
+	.ui-state-hover{
+		background-color: #ffffdd;
+		border-color: #ed1d24;
 	}
 	.ui-tabs-active{
 		background-color: #ffffff;
@@ -303,14 +307,10 @@ main{
 		background-color: #ffffff;
 	}
 
-	// #tabs-1,#tabs-2,#tabs-3{
-	// 	width:100%;
-	// }
 	.menu_tabs-1_item{
 		display:$inl;
 		text-align:center;
 		width:24%;
-		// margin:48px 0 56px;
 		margin:(48/1192)*100% 0 (56/1192)*100%;
 		background-color: #ffffff;
 
@@ -339,13 +339,11 @@ main{
 			color: #ffffff;
 			font-family: "RobotoRegular";
 			font-size: 14px;
-			// font-weight: 400;
 			line-height: 30px;
 			span{
 				color: #ffffff;
 				font-family: "RobotoLight";
 				font-size: 36px;
-				// font-weight: 300;
 				text-transform: uppercase;
 			}
 			img{
@@ -356,6 +354,11 @@ main{
 
 	.menu_tabs-1_item_text{
 		width:100%;
+		margin-top:18px;
+		color: #000000;
+		font-family: "RobotoRegular";
+		font-size: 14px;
+		line-height: 20px;
 	}
 	.menu_tabs-1_attention_line{
 		width:100%;	
@@ -423,18 +426,18 @@ main{
 			text-align:center;
 		}
 		.advantages_card_title{
-			padding-top:103px;
+			padding-top:99px;
 			color: #2c3134;
 			font-family: RobotoBold;
 			text-transform: uppercase;
-			font-size: 36px;
+			font-size: 35px;
 		}
 		.advantages_card_text{
-			padding-top:48px;
-			padding-bottom:48px;
+			padding-top:43px;
+			padding-bottom:40px;
 			color: #2c3134;
-			font-family: RobotoRegular;
-			font-size: 14px;
+			font-family: "RobotoRegular";
+			font-size: 13px;
 		}
 	}
 	.advantages_card_items_item{
@@ -453,11 +456,19 @@ main{
 			img{
 				padding:16px 0;
 			}
+			
+		}
+		.advantages_card_items_text{
+			margin-top:13px;
+			color: #000000;
+			font-family: "RobotoRegular";
+			font-size: 13px;
 		}
 	}
 	.news{
 		background-color: #ffffff;
 		padding-top:30px;
+		padding-bottom:37px;
 	}
 	.news_title{
 		float:left;
@@ -485,7 +496,6 @@ main{
 		float:right;
 	}
 	.news_title,.news_items, .news_items_item{
-		// display:$inl;
 		vertical-align:top;
 	}
 	.news_items_item{
@@ -493,6 +503,9 @@ main{
 		width:30%;
 		float:right;
 		margin-right:3%;
+		line-height: 20px;
+		font-family: "RobotoRegular";
+
 		.news_items_item_img{
 			width:100%;
 			img{
@@ -500,13 +513,25 @@ main{
 				height:100%;
 			}	
 		}	
-	}
-	.news_items_item:first-child{
-			margin-right:0%;
-	}
+	
+		.news_items_item:first-child{
+				margin-right:0%;
+		}
+		.news_items_item_date{
+			color: #8696a7;
+			margin:16px 0;
+			font-size: 12px;
+		}
+		.news_items_item_description a{
+			color: #000000;
+			font-size: 14px;
+		}
+		.news_items_item_description a:hover{
+			text-decoration: underline;
+		}
 
+	}
 }
-
 
 
 .clear:after,

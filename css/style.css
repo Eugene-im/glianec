@@ -246,6 +246,7 @@ main .advantages_line_item {
   vertical-align: top;
 }
 main .advantages_line_item .advantages_line_item_text {
+  margin-bottom: 69px;
   color: #2c3134;
   font-family: "RobotoBold";
   font-size: 15px;
@@ -258,22 +259,28 @@ main #tabs {
   background-color: #e5e3e3;
 }
 main ul {
+  position: relative;
+  margin-top: -60px;
   background-color: #e5e3e3;
 }
 main li {
-  width: 33%;
+  width: 33.3333%;
   float: left;
   text-align: center;
   border-top: 4px solid transparent;
   background-color: rgba(0, 0, 0, 0.2);
-  margin: 0;
+  padding: 18px 0 14px;
 }
 main li a {
-  padding: 0 20%;
+  padding: 18px 20%;
   color: #2c3134;
   font-family: "RobotoBold";
   font-size: 14px;
   text-transform: uppercase;
+}
+main .ui-state-hover {
+  background-color: #ffffdd;
+  border-color: #ed1d24;
 }
 main .ui-tabs-active {
   background-color: #ffffff;
@@ -324,6 +331,11 @@ main .menu_tabs-1_item_circle1_circle2 .menu_tabs-1_item_circle1_circle2_include
 }
 main .menu_tabs-1_item_text {
   width: 100%;
+  margin-top: 18px;
+  color: #000000;
+  font-family: "RobotoRegular";
+  font-size: 14px;
+  line-height: 20px;
 }
 main .menu_tabs-1_attention_line {
   width: 100%;
@@ -392,18 +404,18 @@ main .advantages_card .advantages_card_title, main .advantages_card .advantages_
   text-align: center;
 }
 main .advantages_card .advantages_card_title {
-  padding-top: 103px;
+  padding-top: 99px;
   color: #2c3134;
   font-family: RobotoBold;
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 35px;
 }
 main .advantages_card .advantages_card_text {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 43px;
+  padding-bottom: 40px;
   color: #2c3134;
-  font-family: RobotoRegular;
-  font-size: 14px;
+  font-family: "RobotoRegular";
+  font-size: 13px;
 }
 main .advantages_card_items_item {
   display: inline-block;
@@ -423,9 +435,16 @@ main .advantages_card_items_item .advantages_card_items_circle {
 main .advantages_card_items_item .advantages_card_items_circle img {
   padding: 16px 0;
 }
+main .advantages_card_items_item .advantages_card_items_text {
+  margin-top: 13px;
+  color: #000000;
+  font-family: "RobotoRegular";
+  font-size: 13px;
+}
 main .news {
   background-color: #ffffff;
   padding-top: 30px;
+  padding-bottom: 37px;
 }
 main .news_title {
   float: left;
@@ -460,6 +479,8 @@ main .news_items_item {
   width: 30%;
   float: right;
   margin-right: 3%;
+  line-height: 20px;
+  font-family: "RobotoRegular";
 }
 main .news_items_item .news_items_item_img {
   width: 100%;
@@ -468,8 +489,20 @@ main .news_items_item .news_items_item_img img {
   width: 100%;
   height: 100%;
 }
-main .news_items_item:first-child {
+main .news_items_item .news_items_item:first-child {
   margin-right: 0%;
+}
+main .news_items_item .news_items_item_date {
+  color: #8696a7;
+  margin: 16px 0;
+  font-size: 12px;
+}
+main .news_items_item .news_items_item_description a {
+  color: #000000;
+  font-size: 14px;
+}
+main .news_items_item .news_items_item_description a:hover {
+  text-decoration: underline;
 }
 
 .clear:after,

@@ -202,12 +202,12 @@ header, footer{
 			margin-left:5%;
 			li a{
 			color: #000000;
-			font-family: "RobotoRegular";
+			font-family: "RobotoMedium";
 			line-height: 30px;
 			font-size: 14px;
 			span{
+				font-family: "RobotoBold";
 				color: #ed1c24;
-				font-weight: 700;
 				font-style: italic;
 			}
 			}
@@ -249,10 +249,55 @@ main{
 		.content{
 			height:567px;
 		}
-		.board_img{
-			width:auto;
+		.board_img.clear{
+			width:410px;
+			height:544px;
 			position:absolute;
+			background: url(../img/board_1.png) center center no-repeat;
 			bottom:0;
+			.x1{
+				margin:70px 0px 0 0px;
+			}
+			.x2{
+				margin:17px 0px 0 0px;
+			}
+			.x3{
+				margin:0px 0px 0 -27px;
+			}
+			.x4{
+				margin:0px 8px 0 -8px;
+			}
+			.x5{
+				margin:0px 4px 0 -4px;
+			}
+			.board_img_line{
+				padding:0px 0px 0 0;
+				color: #cf0000;
+				text-transform: uppercase;
+				font-family: "RobotoMedium";
+				text-align:center;
+				font-size: 34px;
+
+				.board_img_line_col1{
+					display:$inl;
+					padding:2px 22px 7px 22px;
+					font-family: "RobotoBold";
+					font-size: 9px;
+					img{
+						position:absolute;
+						margin:10px 0px 0 -28px;
+
+					}
+					span{
+						font-size: 26px;
+					}
+				}
+				.board_img_line_col2{
+					display:$inl;
+					padding:0 0 0 0;
+					text-align:left;
+				}
+			}
 		}
 		.board_caption{
 			display:$inl;
@@ -321,8 +366,7 @@ main{
 			background-color:#ffffff;
 			border-radius:8px;
 			margin:0 auto;
-			// left:50%;
-			// transform:translate(-50%);
+			box-shadow:         0px 7px 5px 0px rgba(50, 50, 50, 0.75);
 				.advantages_calc_left,.advantages_calc_center,.advantages_calc_right{
 					display:$inl;
 					height:220px;
@@ -364,7 +408,6 @@ main{
 						color: #000000;
 						font-family: "RobotoRegular";
 						font-size: 12px;
-						// font-weight: 400;
 						line-height: 30px;
 					}
 					input{
@@ -372,8 +415,8 @@ main{
 					}
 					input[type="checkbox" i]{
 						width:auto;
-					
 					}
+					
 					input[type=range] {
 					  -webkit-appearance: none;
 					  width: 100%;
@@ -399,8 +442,6 @@ main{
 					  width: 21px;
 					  border-radius: 50px;
 					  background: url(../img/thumb.png) center center no-repeat;
-					  // background-size:100%;
-					  // background: #ffffff;
 					  cursor: pointer;
 					  -webkit-appearance: none;
 					  margin-top: -6.2px;
@@ -466,11 +507,9 @@ main{
 				.advantages_calc_right{
 					padding:20px 10px 20px 20px;
 					background: url(../img/board_2.png) center center no-repeat;
-					// background-size:100%;
 					width:233px;
+					
 					.advantages_calc_right_line_name{
-						// display:$inl;
-						// width:auto;
 						padding:14px 0 19px 0px;
 						color: #cccccc;
 						font-family: "RobotoRegular";
@@ -518,7 +557,7 @@ main{
 	}
 		ul{
 			position:relative;
-			margin-top:-60px;
+			margin-top:-55px;
 			background-color: #e5e3e3;
 			} 
 			li{
@@ -646,7 +685,6 @@ main{
 			span{
 				font-size: 36px;
 				font-family: "RobotoBold";
-				font-weight:200;
 				color:#ed1d24;
 				padding:0 21px;
 			}
@@ -794,6 +832,7 @@ main{
 	}
 }
 .signature a{
+	padding-left:10%;
 	color: #b5b8bb;
 	font-family: "CuprumRegular";
 	font-size: 12px;
@@ -810,6 +849,48 @@ footer {
 		}
 	}
 }
+
+// синий чекбокс
+// .squaredFour {
+// 	  width: 20px;
+// 	  position: relative;
+// 	  margin: 20px auto;
+// 	  label {
+// 	    width: 20px;
+// 	    height: 20px;
+// 	    cursor: pointer;
+// 	    position: absolute;
+// 	    top: 0;
+// 	    left: 0;
+// 	    background: #fff;
+// 	    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+// 	    border-radius: 2px;
+// 	    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+// 	    &:after {
+// 	      content: '';
+// 	      width: 9px;
+// 	      height: 5px;
+// 	      position: absolute;
+// 	      top: 4px;
+// 	      left: 4px;
+// 	      border: 3px solid #338be9;
+// 	      border-top: none;
+// 	      border-right: none;
+// 	      background: transparent;
+// 	      opacity: 0;
+// 	      transform: rotate(-45deg);
+// 	    }
+// 	    &:hover::after {
+// 	      opacity: 0.5;
+// 	    }
+// 	  }
+// 	  input[type=checkbox] {
+// 	    visibility: hidden;
+// 	    &:checked + label:after {
+// 	      opacity: 1;
+// 	    }
+// 	  }    
+// }
 
 .clear:after,
 .clear:before {

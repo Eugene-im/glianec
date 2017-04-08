@@ -139,8 +139,19 @@ header .block1, footer .block1 {
 header .block1 .block1_tagline, footer .block1 .block1_tagline {
   font-size: 14px;
 }
+header .block1 img, footer .block1 img {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10%;
+}
+header .block1 .block1_map_link, footer .block1 .block1_map_link {
+  margin-top: 10%;
+  vertical-align: top;
+  display: inline-block;
+}
 header .block1 .block1_map_link a, footer .block1 .block1_map_link a {
   color: #ed1d24;
+  padding-left: 4px;
   font-family: "RobotoRegular";
   font-size: 14px;
   line-height: 24px;
@@ -161,6 +172,14 @@ header .block2 ul li a, footer .block2 ul li a {
   font-family: "RobotoRegular";
   line-height: 30px;
   font-size: 14px;
+}
+header .block2 ul li a span, footer .block2 ul li a span {
+  color: #ed1c24;
+  font-weight: 700;
+  font-style: italic;
+}
+header .block2 ul:last-child li:last-child img, footer .block2 ul:last-child li:last-child img {
+  margin-left: -16px;
 }
 header .block3, footer .block3 {
   width: 22%;

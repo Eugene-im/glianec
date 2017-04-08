@@ -152,12 +152,24 @@ header, footer{
 		.block1_tagline{
 			font-size: 14px;	 
 		}
-		.block1_map_link a{
+		img{
+			display:$inl;
+			vertical-align:top;
+			margin-top:10%;
+		}
+		.block1_map_link{
+			margin-top:10%;
+			vertical-align:top;
+			display:$inl;
+			a{
+
 			color: #ed1d24;
+			padding-left:4px;
 			font-family: "RobotoRegular";
 			font-size: 14px;
 			line-height: 24px;
 			text-decoration: underline;
+			} 
 		}
 	}
 	.block2 {
@@ -173,7 +185,15 @@ header, footer{
 			font-family: "RobotoRegular";
 			line-height: 30px;
 			font-size: 14px;
+			span{
+				color: #ed1c24;
+				font-weight: 700;
+				font-style: italic;
 			}
+			}
+		}
+		ul:last-child li:last-child img{
+			margin-left: -16px;
 		}
 	}
 	.block3{

@@ -1,3 +1,23 @@
+/* font-family: "LCD2B"; */
+@font-face {
+    font-family: "LCD2B";
+    src: url("../fonts/LCD2B/LCD2B.eot");
+    src: url("../fonts/LCD2B/LCD2B.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LCD2B/LCD2B.woff") format("woff"),
+    url("../fonts/LCD2B/LCD2B.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "CuprumRegular"; */
+@font-face {
+    font-family: "CuprumRegular";
+    src: url("../fonts/CuprumRegular/CuprumRegular.eot");
+    src: url("../fonts/CuprumRegular/CuprumRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CuprumRegular/CuprumRegular.woff") format("woff"),
+    url("../fonts/CuprumRegular/CuprumRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 /* font-family: "RobotoRegular"; */
 @font-face {
     font-family: "RobotoRegular";
@@ -288,22 +308,205 @@ main{
 			font-size: 15px;
 		}
 	}
-	.advantages_calc{
-		padding-bottom:120px;
-	.advantages_calc_left,.advantages_calc_center,.advantages_calc_right{
-		display:$inl;
-	}
-	.advantages_calc_center{
-		width:(36500/1192)*1%;
+	.advantages_calc_line{
+		width:100%;
+		height:auto;
 		text-align:center;
-		input{
-			width:100%;
-		}
-		input[type="checkbox" i]{
-			width:auto;
-		
-		}
-	}
+		margin-bottom:120px;
+
+		.advantages_calc{
+			box-sizing:content-box;
+			width:752px;
+			height:260px;
+			background-color:#ffffff;
+			border-radius:8px;
+			margin:0 auto;
+			// left:50%;
+			// transform:translate(-50%);
+				.advantages_calc_left,.advantages_calc_center,.advantages_calc_right{
+					display:$inl;
+					height:220px;
+					vertical-align:top;
+				}
+				.advantages_calc_left{
+					padding:30px 18px 0 26px;
+					font-family: RobotoRegular;
+					font-size: 9px;
+					text-transform: uppercase;
+					width:44px;
+					.advantages_calc_left_patrol_mark{
+						color: #8696a7;
+						padding:0 0 28px 0;
+					}
+					.advantages_calc_left_patrol_95,.advantages_calc_left_patrol_92,.advantages_calc_left_patrol_D{
+						padding:0 0 13px 0;
+						color: #2c3134;
+						span{
+							color: #2c3134;
+							font-size: 24px;
+							text-transform: uppercase;
+						}
+					}
+				}
+				.advantages_calc_center{
+					padding:21px 18px 0 0;
+					width:364px;
+					text-align:center;
+					.advantages_calc_center_title{
+						padding:0 0 8px 0;
+						color: #000000;
+						font-family: "RobotoBold";
+						font-size: 24px;
+						text-transform: uppercase;
+					}
+					span{
+						text-shadow: 0 1px 0 #ffffff;
+						color: #000000;
+						font-family: "RobotoRegular";
+						font-size: 12px;
+						// font-weight: 400;
+						line-height: 30px;
+					}
+					input{
+						width:100%;
+					}
+					input[type="checkbox" i]{
+						width:auto;
+					
+					}
+					input[type=range] {
+					  -webkit-appearance: none;
+					  width: 100%;
+					  margin: 6px 0;
+					  padding:8px 0 21px 0;
+					}
+					input[type=range]:focus {
+					  outline: none;
+					}
+					input[type=range]::-webkit-slider-runnable-track {
+					  width: 100%;
+					  height: 9px;
+					  cursor: pointer;
+					  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+					  background: #ed1d24;
+					  border-radius: 25px;
+					  border: 0.2px solid #000101;
+					}
+					input[type=range]::-webkit-slider-thumb {
+					  box-shadow: 0.9px 0.9px 1px #000000, 0px 0px 0.9px #0d0d0d;
+					  border: 1px solid #000000;
+					  height: 21px;
+					  width: 21px;
+					  border-radius: 50px;
+					  background: url(../img/thumb.png) center center no-repeat;
+					  // background-size:100%;
+					  // background: #ffffff;
+					  cursor: pointer;
+					  -webkit-appearance: none;
+					  margin-top: -6.2px;
+					}
+					input[type=range]:focus::-webkit-slider-runnable-track {
+					  background: #ed2229;
+					}
+					input[type=range]::-moz-range-track {
+					  width: 100%;
+					  height: 9px;
+					  cursor: pointer;
+					  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+					  background: #ed1d24;
+					  border-radius: 25px;
+					  border: 0.2px solid #000101;
+					}
+					input[type=range]::-moz-range-thumb {
+					  box-shadow: 0.9px 0.9px 1px #000000, 0px 0px 0.9px #0d0d0d;
+					  border: 1px solid #000000;
+					  height: 21px;
+					  width: 21px;
+					  border-radius: 50px;
+					  background: #ffffff;
+					  cursor: pointer;
+					}
+					input[type=range]::-ms-track {
+					  width: 100%;
+					  height: 9px;
+					  cursor: pointer;
+					  background: transparent;
+					  border-color: transparent;
+					  color: transparent;
+					}
+					input[type=range]::-ms-fill-lower {
+					  background: #ed181f;
+					  border: 0.2px solid #000101;
+					  border-radius: 50px;
+					  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+					}
+					input[type=range]::-ms-fill-upper {
+					  background: #ed1d24;
+					  border: 0.2px solid #000101;
+					  border-radius: 50px;
+					  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+					}
+					input[type=range]::-ms-thumb {
+					  box-shadow: 0.9px 0.9px 1px #000000, 0px 0px 0.9px #0d0d0d;
+					  border: 1px solid #000000;
+					  height: 21px;
+					  width: 21px;
+					  border-radius: 50px;
+					  background: #ffffff;
+					  cursor: pointer;
+					  height: 9px;
+					}
+					input[type=range]:focus::-ms-fill-lower {
+					  background: #ed1d24;
+					}
+					input[type=range]:focus::-ms-fill-upper {
+					  background: #ed2229;
+					}
+				}
+				.advantages_calc_right{
+					padding:20px 10px 20px 20px;
+					background: url(../img/board_2.png) center center no-repeat;
+					// background-size:100%;
+					width:233px;
+					.advantages_calc_right_line_name{
+						// display:$inl;
+						// width:auto;
+						padding:14px 0 19px 0px;
+						color: #cccccc;
+						font-family: "RobotoRegular";
+						font-size: 9px;
+						text-transform: uppercase;
+						text-align:center;
+						.advantages_calc_right_line_name_v,.advantages_calc_right_line_name_coast1,.advantages_calc_right_line_name_coast_2{
+							display:$inl;
+						}
+					}
+					.advantages_calc_right_line_number{
+							color: #ff0000;
+							font-family: "LCD2B";
+							font-size: 24px;
+							text-transform: uppercase;
+							padding:14px 0 13px 0;
+							text-align:center;
+							span{
+								padding:0 10px 0 0;
+							}
+						}
+					.advantages_calc_right_line_number_col1{
+						display:$inl;
+						padding:0 16px 0 9px;
+					}
+					.advantages_calc_right_line_number_col2{
+						display:$inl;
+						padding:0 21px 0 0;
+					}
+					.advantages_calc_right_line_number_col3{
+						display:$inl;
+						padding:0 19px 0 0;
+					}
+				}		
+
+			}
 	}
 
 	.menu_tabs{
@@ -590,7 +793,23 @@ main{
 		}
 	}
 }
-
+.signature a{
+	color: #b5b8bb;
+	font-family: "CuprumRegular";
+	font-size: 12px;
+	text-transform: uppercase;
+}
+footer {
+	.block3{
+		margin-left:-22px;
+	}
+	.block4{
+		margin-top:30px;
+		img{
+			opacity:0.2;
+		}
+	}
+}
 
 .clear:after,
 .clear:before {

@@ -1,3 +1,19 @@
+/* font-family: "LCD2B"; */
+@font-face {
+  font-family: "LCD2B";
+  src: url("../fonts/LCD2B/LCD2B.eot");
+  src: url("../fonts/LCD2B/LCD2B.eot?#iefix") format("embedded-opentype"), url("../fonts/LCD2B/LCD2B.woff") format("woff"), url("../fonts/LCD2B/LCD2B.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "CuprumRegular"; */
+@font-face {
+  font-family: "CuprumRegular";
+  src: url("../fonts/CuprumRegular/CuprumRegular.eot");
+  src: url("../fonts/CuprumRegular/CuprumRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/CuprumRegular/CuprumRegular.woff") format("woff"), url("../fonts/CuprumRegular/CuprumRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 /* font-family: "RobotoRegular"; */
 @font-face {
   font-family: "RobotoRegular";
@@ -270,21 +286,194 @@ main .advantages_line_item .advantages_line_item_text {
   font-family: "RobotoBold";
   font-size: 15px;
 }
-main .advantages_calc {
-  padding-bottom: 120px;
+main .advantages_calc_line {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 120px;
 }
-main .advantages_calc .advantages_calc_left, main .advantages_calc .advantages_calc_center, main .advantages_calc .advantages_calc_right {
+main .advantages_calc_line .advantages_calc {
+  box-sizing: content-box;
+  width: 752px;
+  height: 260px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_left, main .advantages_calc_line .advantages_calc .advantages_calc_center, main .advantages_calc_line .advantages_calc .advantages_calc_right {
   display: inline-block;
+  height: 220px;
+  vertical-align: top;
 }
-main .advantages_calc .advantages_calc_center {
-  width: 30.62081%;
+main .advantages_calc_line .advantages_calc .advantages_calc_left {
+  padding: 30px 18px 0 26px;
+  font-family: RobotoRegular;
+  font-size: 9px;
+  text-transform: uppercase;
+  width: 44px;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_left .advantages_calc_left_patrol_mark {
+  color: #8696a7;
+  padding: 0 0 28px 0;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_left .advantages_calc_left_patrol_95, main .advantages_calc_line .advantages_calc .advantages_calc_left .advantages_calc_left_patrol_92, main .advantages_calc_line .advantages_calc .advantages_calc_left .advantages_calc_left_patrol_D {
+  padding: 0 0 13px 0;
+  color: #2c3134;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_left .advantages_calc_left_patrol_95 span, main .advantages_calc_line .advantages_calc .advantages_calc_left .advantages_calc_left_patrol_92 span, main .advantages_calc_line .advantages_calc .advantages_calc_left .advantages_calc_left_patrol_D span {
+  color: #2c3134;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center {
+  padding: 21px 18px 0 0;
+  width: 364px;
   text-align: center;
 }
-main .advantages_calc .advantages_calc_center input {
+main .advantages_calc_line .advantages_calc .advantages_calc_center .advantages_calc_center_title {
+  padding: 0 0 8px 0;
+  color: #000000;
+  font-family: "RobotoBold";
+  font-size: 24px;
+  text-transform: uppercase;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center span {
+  text-shadow: 0 1px 0 #ffffff;
+  color: #000000;
+  font-family: "RobotoRegular";
+  font-size: 12px;
+  line-height: 30px;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input {
   width: 100%;
 }
-main .advantages_calc .advantages_calc_center input[type="checkbox" i] {
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type="checkbox" i] {
   width: auto;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 6px 0;
+  padding: 8px 0 21px 0;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]:focus {
+  outline: none;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #ed1d24;
+  border-radius: 25px;
+  border: 0.2px solid #000101;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0.9px 0.9px 1px #000000, 0px 0px 0.9px #0d0d0d;
+  border: 1px solid #000000;
+  height: 21px;
+  width: 21px;
+  border-radius: 50px;
+  background: url(../img/thumb.png) center center no-repeat;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6.2px;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ed2229;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #ed1d24;
+  border-radius: 25px;
+  border: 0.2px solid #000101;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]::-moz-range-thumb {
+  box-shadow: 0.9px 0.9px 1px #000000, 0px 0px 0.9px #0d0d0d;
+  border: 1px solid #000000;
+  height: 21px;
+  width: 21px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]::-ms-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]::-ms-fill-lower {
+  background: #ed181f;
+  border: 0.2px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]::-ms-fill-upper {
+  background: #ed1d24;
+  border: 0.2px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]::-ms-thumb {
+  box-shadow: 0.9px 0.9px 1px #000000, 0px 0px 0.9px #0d0d0d;
+  border: 1px solid #000000;
+  height: 21px;
+  width: 21px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 9px;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]:focus::-ms-fill-lower {
+  background: #ed1d24;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_center input[type=range]:focus::-ms-fill-upper {
+  background: #ed2229;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_right {
+  padding: 20px 10px 20px 20px;
+  background: url(../img/board_2.png) center center no-repeat;
+  width: 233px;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_right .advantages_calc_right_line_name {
+  padding: 14px 0 19px 0px;
+  color: #cccccc;
+  font-family: "RobotoRegular";
+  font-size: 9px;
+  text-transform: uppercase;
+  text-align: center;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_right .advantages_calc_right_line_name .advantages_calc_right_line_name_v, main .advantages_calc_line .advantages_calc .advantages_calc_right .advantages_calc_right_line_name .advantages_calc_right_line_name_coast1, main .advantages_calc_line .advantages_calc .advantages_calc_right .advantages_calc_right_line_name .advantages_calc_right_line_name_coast_2 {
+  display: inline-block;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_right .advantages_calc_right_line_number {
+  color: #ff0000;
+  font-family: "LCD2B";
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 14px 0 13px 0;
+  text-align: center;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_right .advantages_calc_right_line_number span {
+  padding: 0 10px 0 0;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_right .advantages_calc_right_line_number_col1 {
+  display: inline-block;
+  padding: 0 16px 0 9px;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_right .advantages_calc_right_line_number_col2 {
+  display: inline-block;
+  padding: 0 21px 0 0;
+}
+main .advantages_calc_line .advantages_calc .advantages_calc_right .advantages_calc_right_line_number_col3 {
+  display: inline-block;
+  padding: 0 19px 0 0;
 }
 main .menu_tabs {
   width: 100%;
@@ -558,6 +747,23 @@ main .map .map_title span {
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.8);
   border-top: 3px solid #ed1d24;
+}
+
+.signature a {
+  color: #b5b8bb;
+  font-family: "CuprumRegular";
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+footer .block3 {
+  margin-left: -22px;
+}
+footer .block4 {
+  margin-top: 30px;
+}
+footer .block4 img {
+  opacity: 0.2;
 }
 
 .clear:after,
